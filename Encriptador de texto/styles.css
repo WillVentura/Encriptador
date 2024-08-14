@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+.container{
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background-color: #F3F5FC;
+}
+
+.texto{
+    position: absolute;
+    width: 85%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
+}
+.texto::placeholder{
+    font-family: "Inter";
+    font-style: normal;
+}
+.texto::placeholder{
+    color: #0A3871;
+}
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;
+}
+.mensaje__alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+.mensaje__alerta span{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size:12px;
+    line-height: 150%;
+    color: #405057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 83%;
+}
+.bt-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    gap:8px;
+    width: 50%;
+    background-color: #0A3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFF;
+
+}
+.bt-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4%;
+    gap:8%;
+    width: 50%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;    
+}
+.bt-desencriptar:hover,
+.bt-encriptar:hover{
+    margin: 0.3%;
+    width: 49.5%;
+    padding: 3.8%;
+}
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 60%;
+    top: 5%;
+    background: #FFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    text-align: center;
+}
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+.mensaje-encriptado p {
+    width: 80%;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 15%;
+}
+/*Responsive*/
+@media(max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .encriptar{
+        width: 100%;
+    }
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .mensaje__alerta{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .mensaje__alerta span{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top:70%;
+    }
+    .bt-encriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .bt-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .bt-encriptar:hover,
+    .bt-desencriptar:hover{
+        margin: 0,3%;
+        width: 49.5;
+        padding: 3.8%;
+    }
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+    }
+    .encriptado{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
+.footer{
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
